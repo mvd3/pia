@@ -1,0 +1,33 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const takmicenje_controller_1 = require("../controllers/takmicenje.controller");
+const takmicenjeRouter = express_1.default.Router();
+takmicenjeRouter.route('/dohvatiSportove').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiSportove(req, res));
+takmicenjeRouter.route('/dohvatiSportisteZemlje').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiSportisteZemlje(req, res));
+takmicenjeRouter.route('/dodajSportistuZaDisciplinu').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dodajSportistuZaDisciplinu(req, res));
+takmicenjeRouter.route('/dohvatiIdZemljePoKodu').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiIdZemljePoKodu(req, res));
+takmicenjeRouter.route('/dohvatiZemlje').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiZemlje(req, res));
+takmicenjeRouter.route('/tvoriTakmicenje').post((req, res) => new takmicenje_controller_1.TakmicenjeController().tvoriTakmicenje(req, res));
+takmicenjeRouter.route('/dohvatiTakmicenjaUPripremi').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiTakmicenjaUPripremi(req, res));
+takmicenjeRouter.route('/dohvatiSport').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiSport(req, res));
+takmicenjeRouter.route('/dohvatiSportisteZaTakmicenje').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiSportisteZaTakmicenje(req, res));
+takmicenjeRouter.route('/dohvatiLokacijeZaSport').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiLokacijeZaSport(req, res));
+takmicenjeRouter.route('/proveriZauzece').post((req, res) => new takmicenje_controller_1.TakmicenjeController().proveriZauzece(req, res));
+takmicenjeRouter.route('/dohvatiSlobodneDelegate').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiSlobodneDelegate(req, res));
+takmicenjeRouter.route('/organizujTakmicenje').post((req, res) => new takmicenje_controller_1.TakmicenjeController().organizujTakmicenje(req, res));
+takmicenjeRouter.route('/dohvatiTakmicenjaZaDelegata').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiTakmicenjaZaDelegata(req, res));
+takmicenjeRouter.route('/dohvatiZauzecaZaTakmicenje').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiZauzecaZaTakmicenje(req, res));
+takmicenjeRouter.route('/dodajRundu').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dodajRundu(req, res));
+takmicenjeRouter.route('/dohvatiTakmicenjaSaRundama').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiTakmicenjaSaRundama(req, res));
+takmicenjeRouter.route('/dohvatiRundu').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiRundu(req, res));
+takmicenjeRouter.route('/dohvatiSportiste').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiSportiste(req, res));
+takmicenjeRouter.route('/zavrsiTakmicenje').post((req, res) => new takmicenje_controller_1.TakmicenjeController().zavrsiTakmicenje(req, res));
+takmicenjeRouter.route('/zavrsiRundu').post((req, res) => new takmicenje_controller_1.TakmicenjeController().zavrsiRundu(req, res));
+takmicenjeRouter.route('/dohvatiZavrsenaTakmicenja').post((req, res) => new takmicenje_controller_1.TakmicenjeController().dohvatiZavrsenaTakmicenja(req, res));
+takmicenjeRouter.route('/traziSportiste').post((req, res) => new takmicenje_controller_1.TakmicenjeController().traziSportiste(req, res));
+exports.default = takmicenjeRouter;
+//# sourceMappingURL=takmicenje.routes.js.map

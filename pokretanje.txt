@@ -1,0 +1,9 @@
+Prvi korak:
+	Bootstrap - npm i bootstrap
+	U angular.json dodati:
+		projects->app->architect->build->styles: node_modules/bootstrap/dist/css/bootstrap.min.css
+		projects->app->architect->build->scripts: node_modules/bootstrap/dist/js/bootstrap.min.js
+npm i flag-icon-css
+npm i crypto-js --save
+npm i @types/crypto-js -save
+projects->app->architect->build->scripts: "node_modules/crypto-js/crypto-js.js"
